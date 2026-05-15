@@ -1,22 +1,21 @@
 /* ═══════════════════════════════════════════
    PORTFOLIO DATA
    ▶ Replace each url: "#" with the direct YouTube link for that project
-   ▶ Replace tile-color hex with a subtle tint that fits the project's mood
 ═══════════════════════════════════════════ */
 const PROJECTS = [
   {
     title: "BOND\n60 YEARS",
     tag: "Retrospective Supercut",
     cat: "supercut",
-    url: "#", // ▶ e.g. "https://youtu.be/XXXXXXXX"
-    color: "#0e0d09"
+    url: "#",
+    color: "#1a0808"
   },
   {
     title: "OSCARS\nSUPERCUT",
     tag: "Award Season Cut",
     cat: "supercut",
     url: "#",
-    color: "#0c0c0e"
+    color: "#100c0e"
   },
   {
     title: "DAVID BOWIE\nRETROSPECTIVE",
@@ -30,21 +29,21 @@ const PROJECTS = [
     tag: "Documentary Trailer",
     cat: "trailer",
     url: "#",
-    color: "#090c0e"
+    color: "#080c12"
   },
   {
     title: "WEIYENA",
     tag: "Film Trailer",
     cat: "trailer",
     url: "#",
-    color: "#0a0e0c"
+    color: "#080e0a"
   },
   {
     title: "VOICES\nUPRISING",
     tag: "Documentary Trailer",
     cat: "trailer",
     url: "#",
-    color: "#0e0b09"
+    color: "#120809"
   },
   {
     title: "UNIVERSAL\nMUSIC REEL",
@@ -58,9 +57,40 @@ const PROJECTS = [
     tag: "Event Promo",
     cat: "reel",
     url: "#",
-    color: "#0a0e09"
+    color: "#080e09"
   }
 ];
+
+/* ═══════════════════════════════════════════
+   CUSTOM CURSOR
+═══════════════════════════════════════════ */
+(function () {
+  const cursor = document.getElementById('cursor');
+  if (!cursor) return;
+  const dot  = cursor.querySelector('.cursor-dot');
+  const ring = cursor.querySelector('.cursor-ring');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX;
+    my = e.clientY;
+    dot.style.left = mx + 'px';
+    dot.style.top  = my + 'px';
+  });
+
+  (function loop() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(loop);
+  })();
+
+  document.querySelectorAll('a, button, .filter, .tile, .logo-slot').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+  });
+})();
 
 /* ═══════════════════════════════════════════
    PORTFOLIO RENDER + FILTER
@@ -96,9 +126,9 @@ function renderPortfolio(filter) {
     grid.appendChild(a);
   });
 
-  // Observe newly rendered tiles
   requestAnimationFrame(() => {
     grid.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    revealInViewport();
   });
 }
 
@@ -135,19 +165,19 @@ window.addEventListener('scroll', () => {
 /* ═══════════════════════════════════════════
    MOBILE MENU TOGGLE
 ═══════════════════════════════════════════ */
-const toggle = document.getElementById('nav-toggle');
-const navLinks = document.getElementById('nav-links');
+const toggle    = document.getElementById('nav-toggle');
+const navDrawer = document.getElementById('nav-drawer');
 
 toggle.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
+  const isOpen = navDrawer.classList.toggle('open');
   toggle.classList.toggle('open', isOpen);
   toggle.setAttribute('aria-expanded', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
-navLinks.querySelectorAll('a').forEach(a => {
+navDrawer.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
+    navDrawer.classList.remove('open');
     toggle.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
@@ -159,7 +189,6 @@ navLinks.querySelectorAll('a').forEach(a => {
 ═══════════════════════════════════════════ */
 renderPortfolio('all');
 
-// Immediately reveal any .reveal elements already in the viewport
 function revealInViewport() {
   document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
     const rect = el.getBoundingClientRect();

@@ -5,118 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Passionfruit Cine Promos — Cinematic trailer production, supercuts and retrospective reels for international film releases and cinema events. Vienna, Austria.">
   <meta property="og:title" content="Passionfruit Cine Promos — Cinematic Trailer Production">
-  <meta property="og:description" content="Cinematic trailers. Supercuts. Promo reels. Vienna · International.">
+  <meta property="og:description" content="Customized promotional packages for cinemas, broadcasting and film festivals — delivering internationally.">
   <meta property="og:url" content="https://www.passionfruit.promo">
-  <meta property="og:type" content="website">
   <title>PASSIONFRUIT CINE PROMOS — Cinematic Trailer Production & Supercuts</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- GRAIN OVERLAY -->
+<!-- CURSOR -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-ring"></div>
+  <div class="cursor-dot"></div>
+</div>
+
+<!-- GRAIN -->
 <div class="grain" aria-hidden="true"></div>
 
-<!-- NAVIGATION -->
-<nav class="nav" id="nav">
-  <a class="nav-logo" href="#top" aria-label="Passionfruit Cine Promos — Home">
-    <div class="logo-mark" aria-hidden="true">
-      <div class="logo-circle"></div>
-      <div class="logo-dot"></div>
-    </div>
-    <div class="logo-text">
-      <span class="logo-name">PASSIONFRUIT</span>
-      <span class="logo-sep">·</span>
-      <span class="logo-sub">CINE PROMOS</span>
-    </div>
-  </a>
-  <div class="nav-links" id="nav-links">
-    <a href="#work" class="nav-link">Work</a>
-    <a href="#services" class="nav-link">Services</a>
-    <a href="#cinemas" class="nav-link">For Cinemas</a>
-    <a href="#contact" class="nav-cta">Get an Offer</a>
-  </div>
+<!-- NAV -->
+<nav id="nav">
+  <a href="#top" class="nav-logo">PASSION<span>FRUIT</span> · CINE PROMOS</a>
+  <ul class="nav-links">
+    <li><a href="#works">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cinemas">Cinemas</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Commission a Reel</a>
   <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#works">Work</a>
+  <a href="#services">Services</a>
+  <a href="#cinemas">Cinemas</a>
+  <a href="#team">Team</a>
+  <a href="#contact" class="drawer-cta">Commission a Reel</a>
+</div>
 
 <!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-glow" aria-hidden="true"></div>
+<section id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="filmstrip" aria-hidden="true">
+    <div class="fs-hole"></div><div class="fs-hole"></div>
+    <div class="fs-frame"></div>
+    <div class="fs-hole"></div><div class="fs-hole"></div>
+    <div class="fs-frame"></div>
+    <div class="fs-hole"></div><div class="fs-hole"></div>
+    <div class="fs-frame"></div>
+    <div class="fs-hole"></div><div class="fs-hole"></div>
+    <div class="fs-frame"></div>
+    <div class="fs-hole"></div><div class="fs-hole"></div>
+  </div>
+
   <div class="hero-content">
-    <p class="hero-eyebrow reveal">Vienna · London · International Markets</p>
+    <p class="hero-counter">EST. VIENNA &mdash; INTERNATIONAL TRAILER PRODUCTION</p>
     <h1 class="hero-title">
-      <span class="hero-line reveal" style="--d:.06s">CINEMATIC</span>
-      <span class="hero-line hero-line--gold reveal" style="--d:.14s">TRAILERS.</span>
-      <span class="hero-line reveal" style="--d:.22s">SUPERCUTS.</span>
-      <span class="hero-line reveal" style="--d:.30s">PROMO<em> REELS.</em></span>
+      TRAILERS<br>
+      THAT <span class="h-fruit">MOVE.</span><br>
+      <span class="h-gold">SUPERCUTS</span><br>
+      THAT LAST.
     </h1>
-    <p class="hero-desc reveal" style="--d:.44s">
+    <p class="hero-sub">
       Customized promotional packages for cinemas, broadcasting and streaming services,
       brands and film festivals — delivering internationally for over two decades.
     </p>
-    <div class="hero-ctas reveal" style="--d:.56s">
-      <a href="#contact" class="btn btn--gold">Commission a Reel</a>
-      <a href="#reel" class="btn btn--ghost">
-        <svg width="9" height="11" viewBox="0 0 9 11" fill="currentColor" aria-hidden="true"><path d="M0 0l9 5.5L0 11z"/></svg>
-        Watch Showreel
-      </a>
+    <div class="hero-actions">
+      <a href="#reel" class="btn-primary">Watch Showreel</a>
+      <a href="#contact" class="btn-ghost">Commission a Project</a>
     </div>
   </div>
 
-  <!-- Ticker tape -->
   <div class="hero-ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>TRAILER PRODUCTION</span><span class="t-sep">·</span>
-      <span>SUPERCUTS</span><span class="t-sep">·</span>
-      <span>RETROSPECTIVES</span><span class="t-sep">·</span>
-      <span>EVENT PROMOS</span><span class="t-sep">·</span>
-      <span>TV PROMOS</span><span class="t-sep">·</span>
-      <span>TRAILER PRODUCTION</span><span class="t-sep">·</span>
-      <span>SUPERCUTS</span><span class="t-sep">·</span>
-      <span>RETROSPECTIVES</span><span class="t-sep">·</span>
-      <span>EVENT PROMOS</span><span class="t-sep">·</span>
-      <span>TV PROMOS</span><span class="t-sep">·</span>
+      <span class="ti">Cinematic Trailer Production</span><span class="ts">✦</span>
+      <span class="ti">Supercuts &amp; Retrospectives</span><span class="ts">✦</span>
+      <span class="ti">Event &amp; Festival Promos</span><span class="ts">✦</span>
+      <span class="ti">TV Promo Editing</span><span class="ts">✦</span>
+      <span class="ti">Director Tribute Reels</span><span class="ts">✦</span>
+      <span class="ti">Anniversary Supercuts</span><span class="ts">✦</span>
+      <span class="ti">Cinematic Trailer Production</span><span class="ts">✦</span>
+      <span class="ti">Supercuts &amp; Retrospectives</span><span class="ts">✦</span>
+      <span class="ti">Event &amp; Festival Promos</span><span class="ts">✦</span>
+      <span class="ti">TV Promo Editing</span><span class="ts">✦</span>
+      <span class="ti">Director Tribute Reels</span><span class="ts">✦</span>
+      <span class="ti">Anniversary Supercuts</span><span class="ts">✦</span>
     </div>
   </div>
-
-  <!-- Scroll indicator -->
-  <a href="#reel" class="hero-scroll" aria-label="Scroll to showreel">
-    <span class="scroll-label">SCROLL</span>
-    <span class="scroll-bar"></span>
-  </a>
 </section>
 
 <!-- SHOWREEL -->
-<section class="reel" id="reel">
-  <div class="section-label reveal">
-    <div class="label-rule"></div>
-    <span>SHOWREEL</span>
-    <div class="label-rule"></div>
+<section class="reel-section" id="reel">
+  <div class="reel-header reveal">
+    <p class="section-label">01 &mdash; Showreel</p>
+    <h2 class="section-title">THE REEL</h2>
+    <p class="reel-note">Full reel and individual project breakdowns available on request.</p>
   </div>
-  <div class="reel-wrap reveal">
-    <div class="reel-frame">
-      <!-- ▶ REPLACE: change YOUR_VIDEO_ID to your YouTube video ID (the part after ?v=) -->
-      <iframe
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&color=white&modestbranding=1&iv_load_policy=3"
-        title="Passionfruit Cine Promos — Showreel"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+  <!-- ▶ REPLACE YOUR_VIDEO_ID with your YouTube video ID -->
+  <div class="reel-frame reveal">
+    <iframe
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&color=white&modestbranding=1"
+      title="Passionfruit Cine Promos — Showreel"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 </section>
 
-<!-- PORTFOLIO -->
-<section class="portfolio" id="work">
-  <div class="section-head">
-    <span class="section-eyebrow reveal">SELECTED WORK</span>
-    <h2 class="section-title reveal">The Reel</h2>
-    <p class="section-sub reveal">Trailers, supercuts and retrospective reels for film, television and cinema events.</p>
+<!-- WORKS -->
+<section id="works">
+  <div class="works-header reveal">
+    <div>
+      <p class="section-label">02 &mdash; Selected Work</p>
+      <h2 class="section-title">SELECTED<br>PROJECTS</h2>
+    </div>
+    <p class="works-note">Eight standout projects from a 20-year body of work spanning international markets.</p>
   </div>
   <nav class="filters reveal" aria-label="Filter by type">
     <button class="filter active" data-cat="all">All</button>
@@ -126,39 +133,34 @@
   </nav>
   <div class="portfolio-grid" id="grid" role="list"></div>
   <p class="portfolio-note reveal">
-    TV Promos portfolio and full catalogue available on request &mdash;
+    TV Promos portfolio and full catalogue on request &mdash;
     <a href="mailto:hello@passionfruit.promo">hello@passionfruit.promo</a>
   </p>
 </section>
 
 <!-- CLIENTS -->
 <section class="clients">
-  <div class="section-label reveal">
-    <div class="label-rule"></div>
-    <span>WORKS &amp; CLIENTS</span>
-    <div class="label-rule"></div>
-  </div>
   <div class="clients-marquee" aria-hidden="true">
     <div class="clients-track">
-      <span class="ci">JAMES BOND FRANCHISE</span><span class="cs">·</span>
-      <span class="ci">THE ACADEMY AWARDS</span><span class="cs">·</span>
-      <span class="ci">UNIVERSAL MUSIC GROUP</span><span class="cs">·</span>
-      <span class="ci">AUSTRIAN WORLD SUMMIT</span><span class="cs">·</span>
-      <span class="ci">DAVID BOWIE</span><span class="cs">·</span>
-      <span class="ci">TINA TURNER</span><span class="cs">·</span>
-      <span class="ci">KYLIE MINOGUE</span><span class="cs">·</span>
-      <span class="ci">TOM JONES</span><span class="cs">·</span>
-      <span class="ci">JAMES BOND FRANCHISE</span><span class="cs">·</span>
-      <span class="ci">THE ACADEMY AWARDS</span><span class="cs">·</span>
-      <span class="ci">UNIVERSAL MUSIC GROUP</span><span class="cs">·</span>
-      <span class="ci">AUSTRIAN WORLD SUMMIT</span><span class="cs">·</span>
-      <span class="ci">DAVID BOWIE</span><span class="cs">·</span>
-      <span class="ci">TINA TURNER</span><span class="cs">·</span>
-      <span class="ci">KYLIE MINOGUE</span><span class="cs">·</span>
-      <span class="ci">TOM JONES</span><span class="cs">·</span>
+      <span class="ci">JAMES BOND FRANCHISE</span><span class="cs">✦</span>
+      <span class="ci">THE ACADEMY AWARDS</span><span class="cs">✦</span>
+      <span class="ci">UNIVERSAL MUSIC GROUP</span><span class="cs">✦</span>
+      <span class="ci">AUSTRIAN WORLD SUMMIT</span><span class="cs">✦</span>
+      <span class="ci">DAVID BOWIE</span><span class="cs">✦</span>
+      <span class="ci">TINA TURNER</span><span class="cs">✦</span>
+      <span class="ci">KYLIE MINOGUE</span><span class="cs">✦</span>
+      <span class="ci">TOM JONES</span><span class="cs">✦</span>
+      <span class="ci">JAMES BOND FRANCHISE</span><span class="cs">✦</span>
+      <span class="ci">THE ACADEMY AWARDS</span><span class="cs">✦</span>
+      <span class="ci">UNIVERSAL MUSIC GROUP</span><span class="cs">✦</span>
+      <span class="ci">AUSTRIAN WORLD SUMMIT</span><span class="cs">✦</span>
+      <span class="ci">DAVID BOWIE</span><span class="cs">✦</span>
+      <span class="ci">TINA TURNER</span><span class="cs">✦</span>
+      <span class="ci">KYLIE MINOGUE</span><span class="cs">✦</span>
+      <span class="ci">TOM JONES</span><span class="cs">✦</span>
     </div>
   </div>
-  <!-- ▶ REPLACE: once you have logo files, swap each <span> for <img src="logos/name.png" alt="…"> -->
+  <!-- ▶ REPLACE: swap <span> for <img src="logos/name.svg" alt="…"> once you have logo files -->
   <div class="logos-grid reveal">
     <div class="logo-slot"><span>JAMES BOND<br>FRANCHISE</span></div>
     <div class="logo-slot"><span>THE ACADEMY<br>AWARDS</span></div>
@@ -170,89 +172,157 @@
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
-  <div class="services-inner">
-    <div class="section-head">
-      <span class="section-eyebrow reveal">WHAT WE DO</span>
-      <h2 class="section-title reveal">Craft. Cut. Deliver.</h2>
+<section id="services">
+  <div class="services-header reveal">
+    <div>
+      <p class="section-label">03 &mdash; What We Craft</p>
+      <h2 class="section-title">FULL<br>SPECTRUM<br>PROMO</h2>
     </div>
-    <div class="services-grid">
-      <div class="service reveal">
-        <div class="service-num">01</div>
-        <h3 class="service-title">Cinematic Trailer Production</h3>
-        <p class="service-body">From documentary to feature — trailers built to move an audience and open the room for a conversation.</p>
-      </div>
-      <div class="service reveal">
-        <div class="service-num">02</div>
-        <h3 class="service-title">Supercuts & Anniversary Reels</h3>
-        <p class="service-body">Retrospective compilations for milestones and special screenings — structured to resonate with film fans and press alike.</p>
-      </div>
-      <div class="service reveal">
-        <div class="service-num">03</div>
-        <h3 class="service-title">Event & Cinema Promos</h3>
-        <p class="service-body">Promo reels for film festivals, special screenings and retrospective programs — crafted for the big screen.</p>
-      </div>
-      <div class="service reveal">
-        <div class="service-num">04</div>
-        <h3 class="service-title">Promo Editing & TV Promos</h3>
-        <p class="service-body">Broadcast-ready promo edits for television, streaming and music labels — rhythm, pacing and impact at the core.</p>
-      </div>
+    <p class="services-intro">
+      Every frame is an editorial decision. We don&rsquo;t just cut footage — we construct anticipation,
+      compress emotion, and engineer the desire to be in that seat on opening night.
+    </p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-num">S&mdash;01</span>
+      <div class="service-name">CINEMATIC<br>TRAILERS</div>
+      <p class="service-desc">From documentary to feature — trailers built to move an audience and open the room for a conversation. Narrative-first editing at the scale international markets demand.</p>
+      <span class="service-tag">Theatrical &middot; Arthouse &middot; Streaming</span>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">S&mdash;02</span>
+      <div class="service-name">SUPERCUTS &amp;<br>RETROSPECTIVES</div>
+      <p class="service-desc">Our signature format. Director retrospectives, genre surveys, anniversary tributes — assembled into a single, emotionally coherent cinematic statement.</p>
+      <span class="service-tag">Director Tribute &middot; Anniversary &middot; Decade</span>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">S&mdash;03</span>
+      <div class="service-name">EVENT &amp;<br>CINEMA PROMOS</div>
+      <p class="service-desc">Opening reels, institutional sizzles and programme teasers for film festivals, special screenings and retrospective events — crafted for the big screen.</p>
+      <span class="service-tag">Festival &middot; Institutional &middot; Programme</span>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">S&mdash;04</span>
+      <div class="service-name">PROMO EDITING<br>&amp; TV PROMOS</div>
+      <p class="service-desc">Broadcast-ready promo edits for television, streaming and music labels — with rhythm, pacing and impact at the core. Delivered to broadcast specification.</p>
+      <span class="service-tag">TV &middot; Streaming &middot; Music Label</span>
     </div>
   </div>
 </section>
 
 <!-- CINEMAS PARTNERSHIP -->
-<section class="cinemas" id="cinemas">
-  <div class="cinemas-inner">
-    <div class="cinemas-content">
-      <span class="section-eyebrow reveal" style="color:var(--gold)">FOR CINEMAS &amp; FILM EVENTS</span>
-      <h2 class="cinemas-title reveal">Your screen deserves<br>a trailer worthy of it.</h2>
-      <p class="cinemas-desc reveal">
+<section id="cinemas">
+  <div class="cinemas-layout">
+    <div class="cinemas-content reveal">
+      <p class="section-label">04 &mdash; Cinema Partnership</p>
+      <h2 class="section-title">BUILT<br>FOR THE<br>BIG SCREEN</h2>
+      <p class="cinemas-intro">
         We work with cinemas, film archives and event organizers across Europe and international markets —
         building retrospective reels, anniversary promos and event trailers that belong on the big screen.
         From Vienna to London, from festival circuit to broadcast.
       </p>
-      <ul class="cinemas-list reveal">
+      <div class="plan-title">CINEMA PARTNER PROGRAMME</div>
+      <ul class="plan-features">
         <li>Retrospective &amp; anniversary supercuts</li>
         <li>Director and actor tribute reels</li>
-        <li>Seasonal program trailers</li>
+        <li>Seasonal programme trailers</li>
         <li>Film festival and special event promos</li>
         <li>Archive-based compilation reels</li>
-        <li>Subscription program content</li>
+        <li>Subscription programme content</li>
+        <li>Priority delivery &amp; dedicated project contact</li>
       </ul>
-      <div class="cinemas-ctas reveal">
-        <a href="mailto:hello@passionfruit.promo?subject=Cinema+Partnership+Inquiry" class="btn btn--gold">Start a Collaboration</a>
-        <a href="tel:+436644346502" class="btn btn--ghost">+43 664 434 65 02</a>
+      <div class="cinemas-ctas">
+        <a href="mailto:hello@passionfruit.promo?subject=Cinema+Partnership+Inquiry" class="btn-primary">Start a Collaboration</a>
+        <a href="tel:+436644346502" class="btn-ghost">+43 664 434 65 02</a>
       </div>
     </div>
-    <div class="cinemas-visual reveal" aria-hidden="true">
-      <div class="cv-screen">
-        <div class="cv-glow"></div>
-        <div class="cv-filmstrip">
-          <div class="cv-frame"></div>
-          <div class="cv-frame"></div>
-          <div class="cv-frame"></div>
-          <div class="cv-frame"></div>
-          <div class="cv-frame"></div>
-        </div>
+    <div class="partner-cards reveal">
+      <div class="partner-card">
+        <div class="partner-card-title">LOCAL EXPERTISE</div>
+        <p class="partner-card-desc">We operate within the European film landscape — understanding the aesthetic expectations of international arthouse and mainstream cinema audiences.</p>
       </div>
-      <div class="cv-seats">
-        <div class="cv-row cv-row--front">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="cv-row cv-row--back">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
+      <div class="partner-card">
+        <div class="partner-card-title">FAST TURNAROUND</div>
+        <p class="partner-card-desc">Trailer deadlines move fast. Our editorial workflow is built for 48–96 hour delivery on standard cuts. Retrospective supercuts: 5–10 working days.</p>
+      </div>
+      <div class="partner-card partner-card--gold">
+        <div class="partner-card-title">SUBSCRIPTION PRICING</div>
+        <p class="partner-card-desc">Cinemas on our partner programme receive tiered monthly pricing with no per-project surprises. Transparent, plannable, structured for institutional procurement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="reveal">
+    <p class="section-label">05 &mdash; How It Works</p>
+    <h2 class="section-title">FROM BRIEF<br>TO SCREEN</h2>
+  </div>
+  <div class="process-steps reveal">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-title">BRIEF &amp;<br>MATERIAL</div>
+      <p class="step-desc">You provide the brief, source footage or titles list. We ask the right questions — tone, context, audience, and the single emotion the cut must land.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-title">EDIT &amp;<br>SCORE</div>
+      <p class="step-desc">We structure the narrative architecture first, then edit to picture lock. Music and sound design are editorial decisions — not afterthoughts.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-title">REVIEW &amp;<br>REVISION</div>
+      <p class="step-desc">Two structured revision rounds. Feedback is addressed with reasoning — we push back when a note would weaken the cut, and explain why.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div class="step-title">DELIVERY &amp;<br>HANDOVER</div>
+      <p class="step-desc">H.264 and ProRes masters, all formats your distribution channel requires. DCP references available for theatrical screen use.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="team-header reveal">
+    <p class="section-label">06 &mdash; The Team</p>
+    <h2 class="section-title">BEHIND<br>THE CUT</h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <div class="team-photo">
+        <!-- ▶ REPLACE with: <img src="team/tom.jpg" alt="Tom Waldek"> -->
+        <div class="team-initials">TW</div>
+      </div>
+      <div class="team-bio">
+        <div class="team-num">T&mdash;01</div>
+        <h3 class="team-name">TOM WALDEK</h3>
+        <p class="team-role">Founder · Creative Editor, Producer &amp; Director</p>
+        <p class="team-body">Over two decades across TV broadcasting, film production, advertising and creative agencies. Specialises in cinematic storytelling for cinema, TV broadcast, digital media, performing arts and live events. Based in Vienna.</p>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-photo">
+        <!-- ▶ REPLACE with: <img src="team/greg.jpg" alt="Greg Usek"> -->
+        <div class="team-initials">GU</div>
+      </div>
+      <div class="team-bio">
+        <div class="team-num">T&mdash;02</div>
+        <h3 class="team-name">GREG USEK</h3>
+        <p class="team-role">Film &amp; Trailer Music Composer · Sound Designer</p>
+        <p class="team-body">20 million+ combined music sales. Works with Tina Turner, Kylie Minogue and Tom Jones. BPI Platinum Award (2000, UK) &middot; Austrian Amadeus Award (2002, Best Producer). Expertise spanning cinema, TV broadcast and advertising.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="section-head">
-    <span class="section-eyebrow reveal">WHAT CLIENTS SAY</span>
-    <h2 class="section-title reveal">In the Room</h2>
+<section id="testimonials">
+  <div class="testimonials-header reveal">
+    <p class="section-label">07 &mdash; In the Room</p>
+    <h2 class="section-title">WHAT<br>CLIENTS SAY</h2>
   </div>
   <div class="testimonials-grid">
     <div class="tcard reveal">
@@ -290,73 +360,18 @@
   </div>
 </section>
 
-<!-- TEAM -->
-<section class="team">
-  <div class="team-inner">
-    <div class="section-head">
-      <span class="section-eyebrow reveal">THE TEAM</span>
-      <h2 class="section-title reveal">Behind the Cut</h2>
-    </div>
-    <div class="team-grid">
-      <div class="team-card reveal">
-        <div class="team-photo">
-          <!-- ▶ REPLACE placeholder with: <img src="team/tom.jpg" alt="Tom Waldek"> -->
-          <div class="team-initials">TW</div>
-        </div>
-        <div class="team-bio">
-          <h3 class="team-name">Tom Waldek</h3>
-          <p class="team-role">Founder · Creative Editor, Producer &amp; Director</p>
-          <p class="team-body">Over two decades across TV broadcasting, film production, advertising and creative agencies. Specialises in cinematic storytelling for cinema, TV broadcast, digital media, performing arts and live events. Based in Vienna.</p>
-        </div>
-      </div>
-      <div class="team-card reveal">
-        <div class="team-photo">
-          <!-- ▶ REPLACE placeholder with: <img src="team/greg.jpg" alt="Greg Usek"> -->
-          <div class="team-initials">GU</div>
-        </div>
-        <div class="team-bio">
-          <h3 class="team-name">Greg Usek</h3>
-          <p class="team-role">Film &amp; Trailer Music Composer · Sound Designer</p>
-          <p class="team-body">20 million+ combined music sales. Works with Tina Turner, Kylie Minogue and Tom Jones. BPI Platinum Award (2000, UK) &middot; Austrian Amadeus Award (2002, Best Producer). Expertise spanning cinema, TV broadcast, digital media and advertising.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
+<!-- COMMISSION CTA -->
+<section id="contact">
+  <div class="contact-glow" aria-hidden="true"></div>
   <div class="contact-inner">
-    <div class="contact-left">
-      <span class="section-eyebrow reveal">GET IN TOUCH</span>
-      <h2 class="contact-title reveal">One brief.<br>One reel.</h2>
-      <p class="contact-desc reveal">Tell us what you&rsquo;re building, where it screens and when it needs to land. We work across time zones.</p>
-      <div class="contact-details reveal">
-        <a href="mailto:hello@passionfruit.promo" class="contact-link">
-          <span aria-hidden="true">✉</span> hello@passionfruit.promo
-        </a>
-        <a href="tel:+436644346502" class="contact-link">
-          <span aria-hidden="true">✆</span> +43 664 434 65 02
-        </a>
-      </div>
-      <div class="contact-socials reveal">
-        <a href="https://youtube.com/@passionsfruit_cine" class="social" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5C1.6 4.4.8 5.2.5 6.2 0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1C4.5 20.4 12 20.4 12 20.4s7.5 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/company/passionfruit-cinepromos" class="social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/passionfruit_cinepromos" class="social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/passionfruitcinepromos" class="social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-      </div>
+    <div class="contact-left reveal">
+      <p class="cta-eyebrow">Open for Commissions &mdash; Vienna &amp; Remote</p>
+      <h2 class="cta-title">LET&rsquo;S BUILD<br>YOUR NEXT<br>REEL.</h2>
+      <p class="cta-sub">Tell us what you&rsquo;re building, where it screens and when it needs to land. We work across time zones.</p>
     </div>
-    <div class="contact-right">
-      <!-- ▶ REPLACE YOUR_FORM_ID: sign up free at formspree.io → create form → paste the ID here -->
-      <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="contact-right reveal">
+      <!-- ▶ REPLACE YOUR_FORM_ID: sign up free at formspree.io → create form → paste ID -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Name</label>
@@ -383,30 +398,43 @@
           <label for="brief">Brief</label>
           <textarea id="brief" name="message" placeholder="Tell us about your project — the film, the occasion, the deadline." required></textarea>
         </div>
-        <button type="submit" class="btn btn--gold btn--full">Send Brief</button>
+        <button type="submit" class="btn-primary btn-full">Send Brief</button>
       </form>
+      <div class="contact-links">
+        <a href="mailto:hello@passionfruit.promo" class="contact-link">
+          <span>✉</span> hello@passionfruit.promo
+        </a>
+        <a href="tel:+436644346502" class="contact-link">
+          <span>✆</span> +43 664 434 65 02
+        </a>
+      </div>
+      <div class="contact-socials">
+        <a href="https://youtube.com/@passionsfruit_cine" class="social" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5C1.6 4.4.8 5.2.5 6.2 0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1C4.5 20.4 12 20.4 12 20.4s7.5 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/passionfruit-cinepromos" class="social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/passionfruit_cinepromos" class="social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/passionfruitcinepromos" class="social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <span class="logo-name">PASSIONFRUIT</span>
-      <span class="logo-sub">CINE PROMOS</span>
-    </div>
-    <p class="footer-tagline">Trailers that move. Supercuts that last.</p>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#cinemas">For Cinemas</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <p class="footer-legal">
-      &copy; 2026 Passionfruit Cine Promos &middot; Vienna, Austria &middot;
-      <a href="mailto:hello@passionfruit.promo">hello@passionfruit.promo</a>
-    </p>
+<footer>
+  <a href="#top" class="footer-logo">PASSION<span>FRUIT</span> CINE PROMOS</a>
+  <div class="footer-note">Vienna, Austria &mdash; &copy; 2026</div>
+  <div class="footer-links">
+    <a href="#works">Work</a>
+    <a href="#services">Services</a>
+    <a href="#cinemas">Cinemas</a>
+    <a href="mailto:hello@passionfruit.promo">Email</a>
   </div>
 </footer>
 
