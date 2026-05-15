@@ -185,6 +185,32 @@ navDrawer.querySelectorAll('a').forEach(a => {
 });
 
 /* ═══════════════════════════════════════════
+   WARM SCROLL SHIFT  (from THO structure)
+═══════════════════════════════════════════ */
+const bgWarmth = document.getElementById('bg-warmth');
+if (bgWarmth) {
+  window.addEventListener('scroll', () => {
+    const scrollY  = window.scrollY || window.pageYOffset;
+    const docH     = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = Math.min(scrollY / (docH * 0.65), 1);
+    bgWarmth.style.opacity = progress * 0.72;
+  }, { passive: true });
+}
+
+/* ═══════════════════════════════════════════
+   SECTION DIVIDERS — animate from center
+═══════════════════════════════════════════ */
+const divObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      divObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.section-div').forEach(el => divObs.observe(el));
+
+/* ═══════════════════════════════════════════
    INIT
 ═══════════════════════════════════════════ */
 renderPortfolio('all');

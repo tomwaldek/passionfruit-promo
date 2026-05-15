@@ -15,6 +15,16 @@
 </head>
 <body>
 
+<!-- ANIMATED MESH ORBS -->
+<div class="mesh-layer" aria-hidden="true">
+  <div class="mesh-orb orb-fruit1"></div>
+  <div class="mesh-orb orb-gold1"></div>
+  <div class="mesh-orb orb-fruit2"></div>
+  <div class="mesh-orb orb-gold2"></div>
+</div>
+<!-- WARM SCROLL SHIFT -->
+<div class="bg-warmth" id="bg-warmth" aria-hidden="true"></div>
+
 <!-- CURSOR -->
 <div class="cursor" id="cursor" aria-hidden="true">
   <div class="cursor-ring"></div>
@@ -97,6 +107,12 @@
   </div>
 </section>
 
+<!-- BRIDGE -->
+<div class="section-bridge" aria-hidden="true">
+  <span class="sb-line"></span>
+  <span class="sb-dot"></span>
+</div>
+
 <!-- SHOWREEL -->
 <section class="reel-section" id="reel">
   <div class="reel-header reveal">
@@ -115,6 +131,8 @@
     </iframe>
   </div>
 </section>
+
+<div class="section-div"></div>
 
 <!-- WORKS -->
 <section id="works">
@@ -137,6 +155,8 @@
     <a href="mailto:hello@passionfruit.promo">hello@passionfruit.promo</a>
   </p>
 </section>
+
+<div class="section-div"></div>
 
 <!-- CLIENTS -->
 <section class="clients">
@@ -171,6 +191,8 @@
   </div>
 </section>
 
+<div class="section-div"></div>
+
 <!-- SERVICES -->
 <section id="services">
   <div class="services-header reveal">
@@ -184,25 +206,25 @@
     </p>
   </div>
   <div class="services-grid">
-    <div class="service-card reveal">
+    <div class="service-card reveal" style="--d:0s">
       <span class="service-num">S&mdash;01</span>
       <div class="service-name">CINEMATIC<br>TRAILERS</div>
       <p class="service-desc">From documentary to feature — trailers built to move an audience and open the room for a conversation. Narrative-first editing at the scale international markets demand.</p>
       <span class="service-tag">Theatrical &middot; Arthouse &middot; Streaming</span>
     </div>
-    <div class="service-card reveal">
+    <div class="service-card reveal" style="--d:0.1s">
       <span class="service-num">S&mdash;02</span>
       <div class="service-name">SUPERCUTS &amp;<br>RETROSPECTIVES</div>
       <p class="service-desc">Our signature format. Director retrospectives, genre surveys, anniversary tributes — assembled into a single, emotionally coherent cinematic statement.</p>
       <span class="service-tag">Director Tribute &middot; Anniversary &middot; Decade</span>
     </div>
-    <div class="service-card reveal">
+    <div class="service-card reveal" style="--d:0.2s">
       <span class="service-num">S&mdash;03</span>
       <div class="service-name">EVENT &amp;<br>CINEMA PROMOS</div>
       <p class="service-desc">Opening reels, institutional sizzles and programme teasers for film festivals, special screenings and retrospective events — crafted for the big screen.</p>
       <span class="service-tag">Festival &middot; Institutional &middot; Programme</span>
     </div>
-    <div class="service-card reveal">
+    <div class="service-card reveal" style="--d:0.3s">
       <span class="service-num">S&mdash;04</span>
       <div class="service-name">PROMO EDITING<br>&amp; TV PROMOS</div>
       <p class="service-desc">Broadcast-ready promo edits for television, streaming and music labels — with rhythm, pacing and impact at the core. Delivered to broadcast specification.</p>
@@ -210,6 +232,8 @@
     </div>
   </div>
 </section>
+
+<div class="section-div"></div>
 
 <!-- CINEMAS PARTNERSHIP -->
 <section id="cinemas">
@@ -254,35 +278,39 @@
   </div>
 </section>
 
+<div class="section-div"></div>
+
 <!-- PROCESS -->
 <section id="process">
   <div class="reveal">
     <p class="section-label">05 &mdash; How It Works</p>
     <h2 class="section-title">FROM BRIEF<br>TO SCREEN</h2>
   </div>
-  <div class="process-steps reveal">
-    <div class="step">
+  <div class="process-steps">
+    <div class="step reveal" style="--d:0s">
       <div class="step-num">01</div>
       <div class="step-title">BRIEF &amp;<br>MATERIAL</div>
       <p class="step-desc">You provide the brief, source footage or titles list. We ask the right questions — tone, context, audience, and the single emotion the cut must land.</p>
     </div>
-    <div class="step">
+    <div class="step reveal" style="--d:0.1s">
       <div class="step-num">02</div>
       <div class="step-title">EDIT &amp;<br>SCORE</div>
       <p class="step-desc">We structure the narrative architecture first, then edit to picture lock. Music and sound design are editorial decisions — not afterthoughts.</p>
     </div>
-    <div class="step">
+    <div class="step reveal" style="--d:0.2s">
       <div class="step-num">03</div>
       <div class="step-title">REVIEW &amp;<br>REVISION</div>
       <p class="step-desc">Two structured revision rounds. Feedback is addressed with reasoning — we push back when a note would weaken the cut, and explain why.</p>
     </div>
-    <div class="step">
+    <div class="step reveal" style="--d:0.3s">
       <div class="step-num">04</div>
       <div class="step-title">DELIVERY &amp;<br>HANDOVER</div>
       <p class="step-desc">H.264 and ProRes masters, all formats your distribution channel requires. DCP references available for theatrical screen use.</p>
     </div>
   </div>
 </section>
+
+<div class="section-div"></div>
 
 <!-- TEAM -->
 <section id="team">
@@ -291,7 +319,7 @@
     <h2 class="section-title">BEHIND<br>THE CUT</h2>
   </div>
   <div class="team-grid">
-    <div class="team-card reveal">
+    <div class="team-card reveal" style="--d:0s">
       <div class="team-photo">
         <!-- ▶ REPLACE with: <img src="team/tom.jpg" alt="Tom Waldek"> -->
         <div class="team-initials">TW</div>
@@ -303,7 +331,7 @@
         <p class="team-body">Over two decades across TV broadcasting, film production, advertising and creative agencies. Specialises in cinematic storytelling for cinema, TV broadcast, digital media, performing arts and live events. Based in Vienna.</p>
       </div>
     </div>
-    <div class="team-card reveal">
+    <div class="team-card reveal" style="--d:0.12s">
       <div class="team-photo">
         <!-- ▶ REPLACE with: <img src="team/greg.jpg" alt="Greg Usek"> -->
         <div class="team-initials">GU</div>
@@ -318,6 +346,8 @@
   </div>
 </section>
 
+<div class="section-div"></div>
+
 <!-- TESTIMONIALS -->
 <section id="testimonials">
   <div class="testimonials-header reveal">
@@ -325,7 +355,7 @@
     <h2 class="section-title">WHAT<br>CLIENTS SAY</h2>
   </div>
   <div class="testimonials-grid">
-    <div class="tcard reveal">
+    <div class="tcard reveal" style="--d:0s">
       <div class="tcard-mark">&ldquo;</div>
       <p class="tcard-text">Working with the Passionfruit team has been an excellent experience.</p>
       <div class="tcard-attr">
@@ -333,7 +363,7 @@
         <span>Filmmaker &amp; Award-Winning Human Rights Activist</span>
       </div>
     </div>
-    <div class="tcard reveal">
+    <div class="tcard reveal" style="--d:0.08s">
       <div class="tcard-mark">&ldquo;</div>
       <p class="tcard-text">The Passionfruit team is just amazing. I&rsquo;m so happy and proud of the showreel.</p>
       <div class="tcard-attr">
@@ -341,7 +371,7 @@
         <span>Award-Winning Director &amp; Stunt Coordinator</span>
       </div>
     </div>
-    <div class="tcard reveal">
+    <div class="tcard reveal" style="--d:0.16s">
       <div class="tcard-mark">&ldquo;</div>
       <p class="tcard-text">The Passionfruit team doesn&rsquo;t only carry passion in their name, it also shows in their work.</p>
       <div class="tcard-attr">
@@ -349,7 +379,7 @@
         <span>Award-Winning Filmmaker, Writer &amp; Director</span>
       </div>
     </div>
-    <div class="tcard reveal">
+    <div class="tcard reveal" style="--d:0.24s">
       <div class="tcard-mark">&ldquo;</div>
       <p class="tcard-text">Great promos require a flawless sense of timing and an eye for detail.</p>
       <div class="tcard-attr">
@@ -359,6 +389,12 @@
     </div>
   </div>
 </section>
+
+<!-- BRIDGE -->
+<div class="section-bridge" aria-hidden="true">
+  <span class="sb-line"></span>
+  <span class="sb-dot"></span>
+</div>
 
 <!-- COMMISSION CTA -->
 <section id="contact">

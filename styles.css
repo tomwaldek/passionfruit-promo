@@ -1282,3 +1282,235 @@ footer {
   .cursor { display: none; }
   body, button, a, input, textarea, select { cursor: auto; }
 }
+
+/* ═══════════════════════════════════════════
+   ANIMATED MESH ORBS  (from THO structure)
+═══════════════════════════════════════════ */
+.mesh-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.mesh-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  will-change: transform;
+}
+.orb-fruit1 {
+  width: 55vw; height: 55vw;
+  top: -20%; left: -12%;
+  background: rgba(200,19,90,0.13);
+  animation: orbA 26s ease-in-out infinite;
+}
+.orb-gold1 {
+  width: 42vw; height: 42vw;
+  bottom: -12%; right: -12%;
+  background: rgba(232,184,75,0.08);
+  animation: orbB 32s ease-in-out infinite;
+}
+.orb-fruit2 {
+  width: 32vw; height: 32vw;
+  top: 42%; right: 18%;
+  background: rgba(200,19,90,0.07);
+  animation: orbC 22s ease-in-out infinite;
+}
+.orb-gold2 {
+  width: 26vw; height: 26vw;
+  top: 68%; left: 8%;
+  background: rgba(232,184,75,0.05);
+  animation: orbA 28s ease-in-out infinite reverse;
+}
+@keyframes orbA {
+  0%,100% { transform: translate(0,0); }
+  50%      { transform: translate(55px,-38px); }
+}
+@keyframes orbB {
+  0%,100% { transform: translate(0,0); }
+  50%      { transform: translate(-48px,32px); }
+}
+@keyframes orbC {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%      { transform: translate(28px,48px) scale(1.08); }
+}
+
+/* ═══════════════════════════════════════════
+   WARM SCROLL SHIFT
+═══════════════════════════════════════════ */
+.bg-warmth {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, #0d0306 0%, #120208 50%, #1a0208 100%);
+  opacity: 0;
+  will-change: opacity;
+}
+
+/* ═══════════════════════════════════════════
+   SECTION DIVIDERS — grow from center
+═══════════════════════════════════════════ */
+.section-div {
+  height: 1px;
+  margin: 0 4vw;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.section-div::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  width: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--fruit), var(--gold), transparent);
+  opacity: 0.35;
+  transition: width 1.1s cubic-bezier(0.22,1,0.36,1), left 1.1s cubic-bezier(0.22,1,0.36,1);
+}
+.section-div.visible::after {
+  width: 100%;
+  left: 0;
+}
+
+/* ═══════════════════════════════════════════
+   SECTION BRIDGES — vertical connecting line
+═══════════════════════════════════════════ */
+.section-bridge {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 0;
+}
+.sb-line {
+  display: block;
+  width: 1px; height: 52px;
+  background: linear-gradient(180deg, var(--fruit), var(--gold));
+  opacity: 0.25;
+  border-radius: 1px;
+}
+.sb-dot {
+  display: block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.35;
+}
+
+/* ═══════════════════════════════════════════
+   NAV LINK HOVER UNDERLINE
+═══════════════════════════════════════════ */
+.nav-links li a {
+  position: relative;
+}
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0;
+  height: 1px;
+  background: var(--fruit);
+  transform: scaleX(0);
+  transition: transform 0.3s var(--ease);
+  transform-origin: right;
+}
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ═══════════════════════════════════════════
+   HERO TITLE — gradient shimmer on accents
+═══════════════════════════════════════════ */
+.h-fruit {
+  background: linear-gradient(135deg, #e0155f 0%, var(--fruit) 40%, #ff2d6e 70%, var(--fruit) 100%);
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradShift 7s ease infinite;
+}
+.h-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, #f5cc60 40%, var(--gold) 70%, #d4a535 100%);
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradShift 7s ease infinite;
+  animation-delay: -3.5s;
+}
+@keyframes gradShift {
+  0%,100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+/* ═══════════════════════════════════════════
+   GLASS CARD TREATMENT — testimonials
+═══════════════════════════════════════════ */
+.tcard {
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.tcard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200,19,90,0.45), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.tcard:hover::before { opacity: 1; }
+
+/* ═══════════════════════════════════════════
+   GLASS CARD — partner cards
+═══════════════════════════════════════════ */
+.partner-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+.partner-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200,19,90,0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.partner-card:hover::after { opacity: 1; }
+
+/* ═══════════════════════════════════════════
+   DISC CARD HOVER — bottom gradient bar
+   (service cards, step cards)
+═══════════════════════════════════════════ */
+.step {
+  position: relative;
+  overflow: hidden;
+}
+.step::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--fruit), var(--gold));
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+}
+.step:hover::after { opacity: 1; }
+
+/* z-index fix: mesh + warmth behind content */
+#nav, #top, .reel-section, #works, .clients,
+#services, #cinemas, #process, #team,
+#testimonials, #contact, footer,
+.section-div, .section-bridge,
+.cursor, .grain {
+  position: relative;
+  z-index: 1;
+}
